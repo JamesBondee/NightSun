@@ -61,11 +61,11 @@ module.exports.run = async (client, player, track) => {
 
 
 let rowss = new MessageActionRow()
-    .addComponents(button4, button5, button6, button8, button10);
+    .addComponents(button4, button5, button6, button8);
 
 
     let row = new MessageActionRow()
-    .addComponents(button1, button3, button7, button9);
+    .addComponents(button1, button3, button7);
 
     let rows = new MessageActionRow()
     .addComponents(button2, button3);

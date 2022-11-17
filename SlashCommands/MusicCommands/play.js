@@ -62,7 +62,7 @@ module.exports = {
             name: `Добавлено:`,
             iconURL: `https://cdn.discordapp.com/attachments/1018893750522621964/1042806573589868554/record1.gif`,
           },
-          description: `[${track.info.title}](${track.info.uri}) \n\n **Продолжительность песни:** ${ms(track.info.length)}   \n\n **Статус:** **Ожидание** \n\n`,
+          description: `[${track.info.title}](${track.info.uri}) \n\n **Длительность:** ${ms(track.info.length)}   \n\n **Статус:** **Ожидание** \n\n`,
           thumbnail: {
             url: `${track.info.image}`,
           },

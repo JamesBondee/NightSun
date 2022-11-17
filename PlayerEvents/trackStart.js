@@ -173,9 +173,8 @@ const MESSAGE = await player.textChannel.send({ embeds: [embed], components: [ro
             player.TrackRepeat(); 
             return await i.reply('Повтор включен', true);
           } else { 
+            player.DisableRepeat();
             return await i.reply('Повтор выключен', true);
-      
-  
 	}
 });
 

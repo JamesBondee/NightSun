@@ -171,10 +171,14 @@ const MESSAGE = await player.textChannel.send({ embeds: [embed], components: [ro
 
         	if (i.customId === 'stop') {
             await i.deferUpdate();
-            player.TrackRepeat()
+            if (!player.TrackRepeat) {
+              player.TrackRepeat(); 
+              return await i.reply.send('Повтор включен', true);
+            } else {
+              player.DisableRepeat();
+              return await i.reply.send('Повтор выключен', true);
+          }
       
-            
-                  
   
 	}
 });

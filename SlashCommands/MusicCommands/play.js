@@ -44,7 +44,7 @@ module.exports = {
         embeds: [{
           color: 'YELLOW',
           author: {
-            iconURL: 'https://thumbs.gfycat.com/BlushingBrownLamb-size_restricted.gif',
+            iconURL: 'https://cdn.discordapp.com/attachments/1018893750522621964/1042806573589868554/record1.gif',
           },
           description: `**Добавлено:** ${resolve.tracks.length} трека из плейлиста: ${resolve.playlistInfo.name}`,
           timestamp: new Date().toISOString(),
@@ -59,9 +59,10 @@ module.exports = {
         interaction.editReply({ embeds: [{
           color: 'YELLOW',
           author: {
-            iconURL: 'https://thumbs.gfycat.com/BlushingBrownLamb-size_restricted.gif',
+            name: `**Добавлено:** [${track.info.title}](${track.info.uri})`,
+            iconURL: `https://cdn.discordapp.com/attachments/1018893750522621964/1042806573589868554/record1.gif`,
           },
-          description: `**Добавлено:** [${track.info.title}](${track.info.uri}) \n\n **Продолжительность песни:** ${ms(track.info.length)}   \n\n **Статус:** **Ожидание** \n\n`,
+          description: `\n\n **Продолжительность песни:** ${ms(track.info.length)}   \n\n **Статус:** **Ожидание** \n\n`,
           thumbnail: {
             url: `${track.info.image}`,
           },

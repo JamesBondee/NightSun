@@ -171,8 +171,8 @@ const MESSAGE = await player.textChannel.send({ embeds: [embed], components: [ro
 
         	if (i.customId === 'stop') {
             await i.deferUpdate();
-              player.destroy()
-      	await i.editReply({ embeds: [embed3], components: [rowss]});
+            player.TrackRepeat()
+      
             
                   
   

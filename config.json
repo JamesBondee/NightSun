@@ -1,0 +1,17 @@
+{
+  "prefix":"/",
+  "owner":["577908968458944512"],
+  "bprefix": "/", 
+  "developerID": "577908968458944512",
+  "bot": "SunShine",
+  "support": "https://discord.gg/HAaamufm",
+  "nodes":[
+    {
+      "name":"SunShineLava",
+      "host":"node1.kartadharta.xyz",
+      "port": 443,
+      "password": "kdlavalink",
+      "secure": true
+    }
+  ]
+}

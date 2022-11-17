@@ -173,10 +173,10 @@ const MESSAGE = await player.textChannel.send({ embeds: [embed], components: [ro
             await i.deferUpdate();
             if (!player.TrackRepeat) {
               player.TrackRepeat(); 
-              return await i.reply.send('Повтор включен', true);
+              return await i.reply('Повтор включен', true);
             } else {
               player.DisableRepeat();
-              return await i.reply.send('Повтор выключен', true);
+              return await i.reply('Повтор выключен', true);
           }
       
   

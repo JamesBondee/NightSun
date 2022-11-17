@@ -12,7 +12,7 @@ module.exports.run = async (client, player) => {
   
   const embed = new discord.MessageEmbed()
   .setColor("#2F3136")
-  .setTitle('Очередь завершена')
+  .setAuthor('Очередь завершена','https://cdn.discordapp.com/attachments/1018893750522621964/1042806573589868554/record1.gif')
   .setTimestamp()
   let row = new MessageActionRow()
     .addComponents(button);

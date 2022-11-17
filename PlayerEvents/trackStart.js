@@ -76,8 +76,8 @@ let rowss = new MessageActionRow()
                     .setAuthor('Начал играть:','https://cdn.discordapp.com/attachments/1018893750522621964/1042806573589868554/record1.gif')
                     .setThumbnail(track.info.image)
                     .addFields(
-                      { name: `**Продолжительность песни:**`, value: `${ms(track.info.length)}` },
-                      { name: `**Статус:**`, value: '**Играю**' },
+                      { name: `**Продолжительность песни:**`, value: `${ms(track.info.length)}`, inline: true },
+                      { name: `**Статус:**`, value: '**Играю**', inline: true },
                     )
                     .setTimestamp()
                     .setDescription(`**Название:** [${track.info.title}](${track.info.uri})    \n\n *Зайди ко мне войс если хочешь управлять кнопками*`)

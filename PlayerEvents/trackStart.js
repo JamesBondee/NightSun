@@ -9,7 +9,7 @@ module.exports.run = async (client, player, track) => {
     .setLabel(`Пауза`)
     .setCustomId(`pause`)
     .setEmoji("937063426121936907")
-    .setStyle("PRIMARY");
+    .setStyle("DANGER");
 
     let button2 = new MessageButton()
     .setLabel(`Продолжить`)
@@ -48,7 +48,7 @@ module.exports.run = async (client, player, track) => {
     .setLabel(`Повтор`)
     .setCustomId(`stop`)
     .setEmoji("937063815286226985")
-    .setStyle("SECONDARY");
+    .setStyle("PRIMARY");
 
     let button8 = new MessageButton()
     .setLabel(`Повтор`)

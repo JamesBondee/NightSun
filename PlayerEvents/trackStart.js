@@ -170,7 +170,6 @@ const MESSAGE = await player.textChannel.send({ embeds: [embed], components: [ro
            
 
         	if (i.customId === 'stop') {
-            await i.deferUpdate();
             if (!player.TrackRepeat) {
               player.TrackRepeat(); 
               return await i.reply('Повтор включен', true);

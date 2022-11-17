@@ -84,11 +84,14 @@ let rowss = new MessageActionRow()
 
                     const embed3 = new discord.MessageEmbed()
                     .setColor("YELLOW")
-                    .setAuthor('Музыка была завершена','https://cdn.discordapp.com/attachments/1018893750522621964/1042806573589868554/record1.gif')
+                    .setAuthor('Трек была завершен','https://cdn.discordapp.com/attachments/1018893750522621964/1042806573589868554/record1.gif')
                     .setThumbnail(track.info.image)
-                    
+                    .addFields(
+                      { name: `**Продолжительность песни:**`, value: `${ms(track.info.length)}`, inline: true },
+                      { name: `**Статус:**`, value: '**Закончил**', inline: true },
+                    )
                     .setTimestamp()
-                    .setDescription(`**Название:** [${track.info.title}](${track.info.uri}) \n\n **Продолжительность песни:** ${ms(track.info.length)}   \n\n **Статус:** **Закончил** `)
+                    .setDescription(`**Название:** [${track.info.title}](${track.info.uri})`)
 
 const MESSAGE = await player.textChannel.send({ embeds: [embed], components: [row]});
 

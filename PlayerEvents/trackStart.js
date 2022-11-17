@@ -76,7 +76,7 @@ let rowss = new MessageActionRow()
                     .setAuthor('Начал играть:','https://cdn.discordapp.com/attachments/1018893750522621964/1042806573589868554/record1.gif')
                     .setThumbnail(track.info.image)
                     .addFields(
-                      { name: `**Продолжительность песни:**`, value: `${ms(track.info.length)}`, inline: true },
+                      { name: `**Длительность:**`, value: `${ms(track.info.length)}`, inline: true },
                       { name: `**Статус:**`, value: '**Играю**', inline: true },
                     )
                     .setTimestamp()
@@ -87,7 +87,7 @@ let rowss = new MessageActionRow()
                     .setAuthor('Трек была завершен','https://cdn.discordapp.com/attachments/1018893750522621964/1042806573589868554/record1.gif')
                     .setThumbnail(track.info.image)
                     .addFields(
-                      { name: `**Продолжительность песни:**`, value: `${ms(track.info.length)}`, inline: true },
+                      { name: `*Длительность:**`, value: `${ms(track.info.length)}`, inline: true },
                       { name: `**Статус:**`, value: '**Закончил**', inline: true },
                     )
                     .setTimestamp()

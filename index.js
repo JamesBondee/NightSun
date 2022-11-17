@@ -36,12 +36,12 @@ client.poru = new Poru(client, client.config.nodes,{
 })
 
 client.on('voiceStateUpdate', (oldState, newState) => {
-  if (oldState.channelID !==  oldState.guild.me.voice.channelID || newState.channel){
+  if (oldState.channelId !==  oldState.guild.me.voice.channelId || newState.channel){
       return(0); 
   }
   if(!oldState.channel.members.size -2){
 
-      oldState.channel.leave();  
+      oldState.player.destroy(); 
   }
 });
 

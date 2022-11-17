@@ -6,4 +6,8 @@ module.exports.run = async (client,oldVoice,newVoice) => {
       if(!newVoice.guild.me.voice.channel){
         player.destroy()
       }
+
+      if(!oldVoice.guild.me.voice.channel){
+        player.destroy
+      }
 }

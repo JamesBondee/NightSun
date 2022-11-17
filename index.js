@@ -34,17 +34,7 @@ client.poru = new Poru(client, client.config.nodes,{
   }
   
 })
-const player = client.poru.players.get(oldVoice.guild.id);
 
-client.on('voiceStateUpdate', (oldState, newState) => {
-  if (oldState.channelId !==  oldState.guild.me.voice.channelId || newState.channel){
-      return(0); 
-  }
-  if(!oldState.channel.members.size -2){
-
-      oldVoice.player.destroy(); 
-  }
-});
 
 
 

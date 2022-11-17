@@ -87,7 +87,7 @@ let rowss = new MessageActionRow()
                     .setAuthor('Трек была завершен','https://cdn.discordapp.com/attachments/1018893750522621964/1042806573589868554/record1.gif')
                     .setThumbnail(track.info.image)
                     .addFields(
-                      { name: `*Длительность:**`, value: `${ms(track.info.length)}`, inline: true },
+                      { name: `**Длительность:**`, value: `${ms(track.info.length)}`, inline: true },
                       { name: `**Статус:**`, value: '**Закончил**', inline: true },
                     )
                     .setTimestamp()

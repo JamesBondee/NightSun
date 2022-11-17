@@ -8,67 +8,52 @@ module.exports.run = async (client, player, track) => {
     let button1 = new MessageButton()
     .setLabel(`Пауза`)
     .setCustomId(`pause`)
-    .setEmoji("1037030294085189693")
+    .setEmoji("937063426121936907")
     .setStyle("PRIMARY");
 
     let button2 = new MessageButton()
     .setLabel(`Продолжить`)
     .setCustomId(`resume`)
-    .setEmoji("1037030147188084867")
+    .setEmoji("937063455612096523")
     .setStyle("SUCCESS");
           
     let button3 = new MessageButton()
     .setLabel(`Пропустить`)
     .setCustomId(`skip`)
-    .setEmoji("1037030462205464576")
+    .setEmoji("937265413463605278")
     .setStyle("SUCCESS");
  
     let button4 = new MessageButton()
     .setLabel(`Пауза`)
     .setCustomId(`dpause`)
     .setDisabled(true)
-    .setEmoji("1037030294085189693")
+    .setEmoji("937063426121936907")
     .setStyle("SECONDARY");
 
      let button5 = new MessageButton()
     .setLabel(`Продолжить`)
     .setCustomId(`dresume`)
-    .setEmoji("1037030147188084867")
+    .setEmoji("937063455612096523")
     .setDisabled(true)
     .setStyle("SECONDARY");
 
      let button6 = new MessageButton()
     .setLabel(`Пропустить`)
     .setCustomId(`dskip`)
-    .setEmoji("1037030462205464576")
+    .setEmoji("937265413463605278")
     .setDisabled(true)
     .setStyle("SECONDARY");
 
     let button7 = new MessageButton()
-    .setLabel(`Завершить`)
+    .setLabel(`Повтор`)
     .setCustomId(`stop`)
-    .setEmoji("1037031321752576121")
-    .setStyle("DANGER");
+    .setEmoji("937063815286226985")
+    .setStyle("SECONDARY");
 
     let button8 = new MessageButton()
-    .setLabel(`Завершить`)
+    .setLabel(`Повтор`)
     .setCustomId(`dstop`)
-    .setEmoji("1037031321752576121")
-    .setDisabled(true)
-    .setStyle("SECONDARY");
-
-
-    let button9 = new MessageButton()
-    .setLabel(`Повтор`)
-    .setCustomId(`loop`)
-    .setEmoji("1037402903008251924")
-    .setDisabled(true)
-    .setStyle("SECONDARY");
-
-    let button10 = new MessageButton()
-    .setLabel(`Повтор`)
-    .setCustomId(`dloop`)
-    .setEmoji("1037402903008251924")
+    .setEmoji("937063815286226985")
     .setDisabled(true)
     .setStyle("SECONDARY");
 
@@ -87,15 +72,15 @@ let rowss = new MessageActionRow()
 
 
    const embed = new discord.MessageEmbed()
-                    .setColor("#2F3136")
+                    .setColor("YELLOW")
                     .setAuthor('Начал играть:','https://cdn.discordapp.com/attachments/1018893750522621964/1042806573589868554/record1.gif')
                     .setThumbnail(track.info.image)
                     .setTimestamp()
                     .setDescription(`**Название:** [${track.info.title}](${track.info.uri}) \n\n **Продолжительность песни:** ${ms(track.info.length)}   \n\n **Статус:** **Играю** \n\n *Зайди ко мне войс если хочешь управлять кнопками*`)
 
                     const embed3 = new discord.MessageEmbed()
-                    .setColor("#2F3136")
-                    .setTitle('Музыка была завершена')
+                    .setColor("YELLOW")
+                    .setAuthor('Музыка была завершена','https://cdn.discordapp.com/attachments/1018893750522621964/1042806573589868554/record1.gif')
                     .setThumbnail(track.info.image)
                     .setTimestamp()
                     .setDescription(`**Название:** [${track.info.title}](${track.info.uri}) \n\n **Продолжительность песни:** ${ms(track.info.length)}   \n\n **Статус:** **Закончил** `)

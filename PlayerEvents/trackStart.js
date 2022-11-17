@@ -89,9 +89,7 @@ let rowss = new MessageActionRow()
    const embed = new discord.MessageEmbed()
                     .setColor("#2F3136")
                     .setTitle('Начал играть:')
-                    .setAuthor({
-                      iconURL: 'https://thumbs.gfycat.com/BlushingBrownLamb-size_restricted.gif'
-                    })
+                    .setAuthor({'https://thumbs.gfycat.com/BlushingBrownLamb-size_restricted.gif'})
                     .setThumbnail(track.info.image)
                     .setTimestamp()
                     .setDescription(`**Название:** [${track.info.title}](${track.info.uri}) \n\n **Продолжительность песни:** ${ms(track.info.length)}   \n\n **Статус:** **Играю** \n\n *Зайди ко мне войс если хочешь управлять кнопками*`)
@@ -99,9 +97,7 @@ let rowss = new MessageActionRow()
                     const embed3 = new discord.MessageEmbed()
                     .setColor("#2F3136")
                     .setTitle('Музыка была завершена')
-                    .setAuthor({
-                      iconURL: 'https://thumbs.gfycat.com/BlushingBrownLamb-size_restricted.gif'
-                    })
+                    .setAuthor({'https://thumbs.gfycat.com/BlushingBrownLamb-size_restricted.gif'})
                     .setThumbnail(track.info.image)
                     .setTimestamp()
                     .setDescription(`**Название:** [${track.info.title}](${track.info.uri}) \n\n **Продолжительность песни:** ${ms(track.info.length)}   \n\n **Статус:** **Закончил** `)

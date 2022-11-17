@@ -75,13 +75,18 @@ let rowss = new MessageActionRow()
                     .setColor("YELLOW")
                     .setAuthor('Начал играть:','https://cdn.discordapp.com/attachments/1018893750522621964/1042806573589868554/record1.gif')
                     .setThumbnail(track.info.image)
+                    .addFields(
+                      { value: ` \n\n **Продолжительность песни:** ${ms(track.info.length)}`, inline: true },
+                      { value: ` \n\n **Статус:** **Играю**`, inline: true },
+                    )
                     .setTimestamp()
-                    .setDescription(`**Название:** [${track.info.title}](${track.info.uri}) \n\n **Продолжительность песни:** ${ms(track.info.length)}   \n\n **Статус:** **Играю** \n\n *Зайди ко мне войс если хочешь управлять кнопками*`)
+                    .setDescription(`**Название:** [${track.info.title}](${track.info.uri})    \n\n *Зайди ко мне войс если хочешь управлять кнопками*`)
 
                     const embed3 = new discord.MessageEmbed()
                     .setColor("YELLOW")
                     .setAuthor('Музыка была завершена','https://cdn.discordapp.com/attachments/1018893750522621964/1042806573589868554/record1.gif')
                     .setThumbnail(track.info.image)
+                    
                     .setTimestamp()
                     .setDescription(`**Название:** [${track.info.title}](${track.info.uri}) \n\n **Продолжительность песни:** ${ms(track.info.length)}   \n\n **Статус:** **Закончил** `)
 
